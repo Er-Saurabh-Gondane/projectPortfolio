@@ -63,7 +63,7 @@
     align-items: center;
     justify-content: space-between;
     gap: 5rem;
-    margin: 4rem auto;
+    margin: 5rem auto;
     padding: 0 1rem;
     padding-bottom: 8rem;
     transition: all 0.10s ease;
@@ -248,7 +248,27 @@
     }
 
 }
+/* icon zigzag with animation  */
 .icon-zigzags{
-   top: 0;
-   left: 0;
+   top: 1.3em;
+   left: -0.3em;
+   animation: zigzagmove 5s ease-in  infinite;
+}
+@keyframes zigzagmove{
+    50%{
+       left:5%;
+       top:3%;
+    }
+}
+
+.icon-plus{
+    top:0;
+    left: 50%;
+    animation: plusmoves 5s ease-in  infinite;
+}
+@keyframes plusmoves{
+    50%{
+       top:3%;
+       left: 46%;
+    }
 }
