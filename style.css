@@ -4,6 +4,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    list-style: none;
+    text-decoration: none;
 }
 #wrapper{
   height: 100vh;
@@ -15,5 +17,25 @@
     margin: 0 auto;
 }
 .navbar{
-
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+}
+.nav-links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.logo{
+    font-size: 30px;
+}
+.nav-links li{
+   width: 100px;
+    text-align: center;
+}
+.nav-links li:hover {
+    font-weight: 500;
+    
 }
