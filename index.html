@@ -6,29 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio-Saurabh</title>
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
     </style>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <div id="wrapper">
-    <div class="container">
-        <!-- navbar with bookmarks links -->
-        <nav class="navbar">
-            <div>
-                <h1 class="logo">Saurabh</h1>
+    <div id="wrapper">
+        <div class="container">
+            <!-- navbar with bookmarks links -->
+            <nav class="navbar">
+                <div>
+                    <h1 class="logo">Saurabh</h1>
+                </div>
+                <div>
+                    <ul class="nav-links">
+                        <li><a href="projects">Projects</a></li>
+                        <li><a href="skills">Skills</a></li>
+                        <li><a href="contact">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- hero section with left content that is showing the description and image in right part -->
+        <main class="hero-section">
+            <!-- faded text  -->
+            <div class="faded-text">Saurabh</div>
+            <div class="left-hero-section">
+                <h2 class="hero-heading">Hi! Saurabh Gondane</h2>
+                <h2 class="hero-subheading">I am a <span class="role"></span></h2>
+                <p class="hero-description">I'm a Software Developer and here is my portfolio website.Here you will
+                    learn about my journey as software developer</p>
+                <div class="btn-pink" id="btn">
+                    Hire Me
+                </div>
             </div>
-            <div>
-                <ul class="nav-links">
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="skills">Skills</a></li>
-                    <li><a href="contact">Contact Me</a></li>
-                </ul>
+            <div class="right-hero-section">
+                <div class="absolute icons icon-dots">
+                    <img src="./assets/userAsset/dots.png" alt="">
+                </div>
+                <div class="absolute icons icon-cube">
+                    <img src="./assets/userAsset/cube.png" alt="">
+                </div>
+                <div class="absolute icons icon-circle">
+                    <img src="./assets/userAsset/circle.png" alt="">
+                </div>
+
+                <div class="absolute icons icon-zigzags">
+                    <img src="./assets/userAsset/zigzags.png" alt="">
+                </div>
+                <div class="absolute icons icon-plus">
+                    <img src="./assets/userAsset/plus.png" alt="">
+                </div>
+                <div class="user-image">
+                    <img src="./assets/userAsset/saurabhProfile.jpg" alt="" width="260px" height="320px">
+                </div>
             </div>
-        </nav>
+        </main>
+        </div>
+        
     </div>
-   </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typeData = new Typed('.role', {
+            strings: ['Web Developer', 'UI/UX Developer', 'Coder', 'Full Stack Developer'],
+            typeSpeed: 100,
+            backSpeed: 80,
+            backdelay: 1000,
+            loop: true
+        });
+    </script>
 </body>
 
 </html>
