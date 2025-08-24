@@ -11,6 +11,7 @@
   height: 100vh;
   overflow-y: hidden;
   overflow-y: auto;
+  scroll-behavior: smooth;
 }
 .container{
     width: 1200px;
@@ -20,22 +21,32 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 15px 0;
+    /* padding: 15px 0;*/
+    padding: 1rem;
 }
 .nav-links{
     display: flex;
     flex-direction: row;
     align-items: center;
-    
+    gap: 30px;
 }
 .logo{
-    font-size: 30px;
+    font-size: 40px;
 }
 .nav-links li{
-   width: 100px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
-.nav-links li:hover {
+.nav-links li a{
+    font-size: 18px;
+    cursor: pointer;
+    color: black;
+    /* margin: 0 20px; */
+}
+
+.nav-links li a:hover {
+    transition: all 0.3s ease;
     font-weight: 500;
-    
 }
